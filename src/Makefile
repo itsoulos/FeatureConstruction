@@ -14,6 +14,7 @@ all:  $(TARGET)
 
 $(TARGET): $(OBJS_FEAT)
 	$(CXX) $(OBJS_FEAT) $(LIB) -o $(TARGET)
+	mkdir -p ../bin
 	cp $(TARGET) ../bin
 
 clean:
